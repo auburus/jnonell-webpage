@@ -17,141 +17,104 @@
 /* ---------------------------------------------------------
    Author's styles
    ---------------------------------------------------------*/
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('./Montserrat-ExtraLight.otf')
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
     body {
-        height:100%;
-        min-height:100%;
+        font-family: 'Montserrat';
     }
     body > header {
-        position:relative;
-        top:0px;
-        left:0px;
-        background-image:url("../img/header.jpg");
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width:100%;
+        max-height: 100%;
+        margin: auto;
+        overflow: auto;
+        background-image: url("../img/header.png");
         background-attachment: fixed;
-        background-position: right;
-        background-repeat: none;
+        background-position: center;
         background-size: cover;
+        z-index: -900;
     }
 
-    header > .over-wrapper {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10% 0;
-        text-align:center;
-    }
-    header > .over-wrapper > .over {
-        margin-left: -50%;
-        margin-right: 50%;
-        background-color:rgba(30, 30, 30, 0.7);
+    .title-wrapper {
+        position: absolute;
+        bottom: 0%;
+        left:5%;
+        color: #f0f0f0;
+        font-size: 3rem;
     }
 
-    header > .over-wrapper > .over  > .text {
-        padding:3rem 5rem;
-        color:#e8e8e8;
-    }
+    .title-wrapper h1 {
+        margin-bottom: 2rem;
+    } 
 
-    header > .over-wrapper > .over > .text > h1 {
-        margin-bottom:2em;
-    }
-
-    @media (max-width: 766px) {
-        header > .over-wrapper {
-            width: 80%;
-        }
-
-        header > .over-wrapper > .over {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-    }
-
-    @media (max-width: 400px) {
-        header > .over-wrapper > .over  > .text {
-            padding:3rem 2rem;
-        }
-    }
-
-    section.bio {
-        background-color: #f8f8f8;
-    }
-    section.skills {
-        background-color: #f0f0f0;
-    }
-    section.portfolio {
-        background-color: #f8f8f8;
-    }
-
-    section .content {
-        width: 750px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        padding: 5em 0em;
-    }
-
-    section .item {
-        flex: 1 1 0;
-    }
-
-    section .left {
-        order: 1;
-    }
-
-    section .right {
-        order: 2;
-    }
-
-    section .left .img-wrapper {
-        padding-right: 3em;
-    }
-
-    section .right .img-wrapper {
-        padding-left: 3em;
-    }
-
-    section .img-wrapper img {
+    .content {
         width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px black;
+        position: absolute;
+        top: 100%;
+        background-color: #e0e0e0;
     }
-
-    @media (min-width: 767px) {
-        section .text-wrapper h2{
-            margin-top: 0px;
-        }
-    }
-
-    @media (max-width: 766px) {
-        section .content {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        section .right {
-            order: 1;
-        }
-
-        section .left .img-wrapper, section .right .img-wrapper {
-            width: 50%;
-            padding: 1rem 0rem;
-            margin: 0 auto;
-        }
-
-        section .text-wrapper {
-            padding: 0px 4rem;
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 400px) {
-        section .text-wrapper {
-            padding: 0px 2rem;
-        }
-    }
-
     
+    main {
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+
+    section {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 1200px) {
+        .title-wrapper {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        section {
+            width: 500px;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .title-wrapper {
+            position:absolute;
+            bottom: 5%;
+            text-align: center;
+            left: 50%;
+            width: 300px;
+            margin-left: -150px;
+        }
+    }
+    @media (max-width: 560px) {
+        section {
+            width: 80%;
+            padding: 0 2rem;
+            font-size:1rem;
+        }
+    }
+
+    footer {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+
 /* ---------------------------------------------------------
    Print styles
    ---------------------------------------------------------*/

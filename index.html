@@ -28,8 +28,11 @@
 <body>
 
     <header role="banner">
+        <!--<img id="background-img" alt="background" src="img/header_2.png">-->
         <nav role="navigation">
         </nav>
+    </header>
+        <!--
         <div class="over-wrapper">
             <div class="over">
                 <div class="text">
@@ -41,84 +44,41 @@
                 </div>
             </div>
         </div>
-    </header>
+        -->
 
-    <div class="wrap">
-
+    <div class="title-wrapper">
+        <h1>Jordi Nonell</h1>
+    </div>
+    <div class="content">
+                
         <main role="main">
-
             <section class="bio">
-                <div class="content">
-                    <div class="item left">
-                        <div class="img-wrapper">
-                            <img src="img/bio.jpg" />
-                        </div>
-                    </div>
-                    <div class="item right">
-                        <div class="text-wrapper">
-                            <header>
-
-                                <h2>Quick Bio</h2>
-                            </header>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a aliquam mi, eu maximus purus. Proin sit amet elit risus. Aliquam erat volutpat. Suspendisse eu convallis turpis. Pellentesque luctus ipsum elit, sed molestie nibh interdum eget. Quisque nec sapien eget velit pharetra rutrum quis sit amet felis. Nulla vitae porttitor ante. Mauris cursus urna velit, vel venenatis mi maximus ut. Proin fringilla urna gravida aliquam eleifend. Integer metus felis, facilisis et urna in, mollis tempus arcu. Etiam lacinia eget ante quis egestas. Suspendisse justo risus, mollis eu turpis id, condimentum cursus dui. Donec iaculis blandit justo vel consectetur. Phasellus non mi erat. Nunc metus felis, molestie nec pretium volutpat, venenatis non dolor. Nunc dictum massa ac sapien rhoncus, ut tempor sapien consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="skills">
-                <div class="content">
-                    <div class="item right">
-                        <div class="img-wrapper">
-                            <img src="img/skills.jpg" />
-                        </div>
-                    </div>
-                    <div class="item left">
-                        <div class="text-wrapper">
-                            <header>
-
-                                <h2>Skills</h2>
-                            </header>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a aliquam mi, eu maximus purus. Proin sit amet elit risus. Aliquam erat volutpat. Suspendisse eu convallis turpis. Pellentesque luctus ipsum elit, sed molestie nibh interdum eget. Quisque nec sapien eget velit pharetra rutrum quis sit amet felis. Nulla vitae porttitor ante. Mauris cursus urna velit, vel venenatis mi maximus ut. Proin fringilla urna gravida aliquam eleifend. Integer metus felis, facilisis et urna in, mollis tempus arcu. Etiam lacinia eget ante quis egestas. Suspendisse justo risus, mollis eu turpis id, condimentum cursus dui. Donec iaculis blandit justo vel consectetur. Phasellus non mi erat. Nunc metus felis, molestie nec pretium volutpat, venenatis non dolor. Nunc dictum massa ac sapien rhoncus, ut tempor sapien consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="portfolio">
-                <div class="content">
-                    <div class="item left">
-                        <div class="img-wrapper">
-                            <img src="img/portfolio.jpg" />
-                        </div>
-                    </div>
-                    <div class="item right">
-                        <div class="text-wrapper">
-                            <header>
-
-                                <h2>Portfolio</h2>
-                            </header>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a aliquam mi, eu maximus purus. Proin sit amet elit risus. Aliquam erat volutpat. Suspendisse eu convallis turpis. Pellentesque luctus ipsum elit, sed molestie nibh interdum eget. Quisque nec sapien eget velit pharetra rutrum quis sit amet felis. Nulla vitae porttitor ante. Mauris cursus urna velit, vel venenatis mi maximus ut. Proin fringilla urna gravida aliquam eleifend. Integer metus felis, facilisis et urna in, mollis tempus arcu. Etiam lacinia eget ante quis egestas. Suspendisse justo risus, mollis eu turpis id, condimentum cursus dui. Donec iaculis blandit justo vel consectetur. Phasellus non mi erat. Nunc metus felis, molestie nec pretium volutpat, venenatis non dolor. Nunc dictum massa ac sapien rhoncus, ut tempor sapien consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <h2>About me</h2>
+                <p>I'm Jordi Nonell, a software developer from Barcelona, currently doing
+                    a Computer Science graduate program in Colorado Springs, Colorado. I have
+                    a background in Electrical/Telecomunications Engineering, and halfway
+                    of a Math major under my belt, apart from job experience in
+                    the startup <a href="https://weathercloud.net">Weathercloud</a> and an
+                    internship in <a href="https://hp.com">HP</a>.</p>
+                <p>I enjoyed programming since I was 16, trying a big diversity of languages
+                    like Haskell, Python, PHP, and C# to name a few.</p>
+                <p>My hobbies include a lot of outdoors activities, to compensate for all the
+                    time I spend with my loved laptop. That means that on a Sunday
+                    you will probably
+                    find me hiking, climbing, or hanging out by a mountain.</p>
             </section>
         </main>
+        <footer role="contentinfo">
+            <!--
+            <address>
+              <p>For further information, please contact <a href="mailto:admin@example.com">Max Mustermann</a>.</p>
+            </address>
 
+            -->
+            <small>Copyright &copy; <time datetime="2017">2017</time></small>
+
+        </footer>
     </div>
-
-    <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
-    <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
-    <footer role="contentinfo">
-        <address>
-          <p>For further information, please contact <a href="mailto:admin@example.com">Max Mustermann</a>.</p>
-        </address>
-
-        <small>Copyright &copy; <time datetime="2017">2017</time></small>
-
-    </footer>
-
 </body>
 </html>
 
