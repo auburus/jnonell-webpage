@@ -36,11 +36,16 @@
         max-height: 100%;
         margin: auto;
         overflow: auto;
-        background-image: url("../img/header.jpg");
+        background-image: url("../img/header-small.jpg");
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
         z-index: -900;
+    }
+    @media (min-width: 719px) {
+        body > header {
+            background-image: url("../img/header.jpg");
+        }
     }
 
     .title-wrapper {
