@@ -77,9 +77,14 @@ section {
     font-size: 1.3rem;
 }
 
-.project a:hover {
-    color:#606060;
+.project {
+    padding-bottom: 1rem;
 }
+
+img.github {
+    margin-left: 5px;
+}
+
 
 @media (max-width: 1200px) {
     .title-wrapper {
